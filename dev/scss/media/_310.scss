@@ -1,0 +1,29 @@
+@media screen and(max-width:320px) {
+  body {
+    font-size: 16px;
+  }
+  .dishes {
+    &__text {
+      font-size: 1em;
+    }
+    &__price {
+      font-size: 1.1em;
+    }
+    &__name {
+      font-size: 1em;
+    }
+  }
+  .menu {
+    grid-column-gap: 10px;
+    &__item {
+      width: 80px;
+      font-size: 1em;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+  .lists {
+  }
+  .chops {
+  }
+}

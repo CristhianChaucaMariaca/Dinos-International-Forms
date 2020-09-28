@@ -1,0 +1,15 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 280px;
+  &__picture {
+    display: block;
+    max-width: 250px;
+    width: 250px;
+  }
+  &__logo {
+    max-width: 100%;
+  }
+}

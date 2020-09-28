@@ -1,0 +1,16 @@
+@font-face{
+    font-family: "loyola pro black";
+    src: url($fontBlack) format('truetype');
+}
+@font-face{
+    font-family: "Funny Cute";
+    src: url($fontRegular) format('truetype');
+}
+$font-t:"Funny Cute";
+$font-p:"loyola pro black";
+$font-titulo:$font-t;
+$font-parrafo:$font-p;
+body{
+    font-family: $font-parrafo;
+    font-size: 12pt;
+}

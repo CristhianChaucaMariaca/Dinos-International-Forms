@@ -1,0 +1,55 @@
+.menu {
+  width: 100wh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  &__body {
+    max-width: 800px;
+    display: block;
+  }
+  &__nav {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+  }
+
+  &__item {
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: $colorsecundario;
+    position: relative;
+    font-size: 1.3em;
+    width: 190px;
+    &:hover {
+      transform: scale(1.05);
+      transition: all 0.3s;
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:last-child{
+      grid-column-start: 2;
+    }
+  }
+  &__btn {
+    width: 100%;
+  }
+  &__btn-text {
+    position: absolute;
+    display: block;
+    margin: 7%;
+  }
+  #combos, #pollos, #otros{
+    width: 65%;
+  }
+  &__text {
+    position: absolute;
+    z-index: 100;
+    bottom: 50%;
+    right: 50%;
+    transform: translateX(50%) translateY(45%);
+  }
+}
