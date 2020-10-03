@@ -1,0 +1,6 @@
+@media (max-width:1050px)
+{
+    .dishes{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

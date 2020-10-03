@@ -6,26 +6,52 @@
   padding-bottom: 20px;
   padding-top: 20px;
   &__body {
-    max-width: 800px;
+    width: 80%;
     display: block;
+    margin: 0 auto;
   }
   &__nav {
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap: 20px;
+    justify-content: center;
+    max-width: 600px;
   }
 
   &__item {
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
-    color: $colorsecundario;
     position: relative;
-    font-size: 1.3em;
-    width: 190px;
+    font-size: 1.4em;
+    font-family: $font-brand;
+    -webkit-text-stroke: 1px black;
     &:hover {
       transform: scale(1.05);
       transition: all 0.3s;
+    }
+    
+    &:nth-child(1){
+      color:#FF119B;
+    }
+    &:nth-child(2){
+      color:$colorsecundario;
+    }
+    &:nth-child(3){
+      color:#BDEF76;
+    }
+    &:nth-child(4){
+      color:#FF119B;
+    }
+    &:nth-child(5){
+      color:$colorsecundario;
+    }
+    &:nth-child(6){
+      color:white;
+    }
+    &:nth-child(7){
+      color:$colorsecundario;
     }
     display: flex;
     justify-content: center;
@@ -36,20 +62,9 @@
   }
   &__btn {
     width: 100%;
-  }
-  &__btn-text {
-    position: absolute;
     display: block;
-    margin: 7%;
-  }
-  #combos, #pollos, #otros{
-    width: 52%;
   }
   &__text {
     position: absolute;
-    z-index: 100;
-    bottom: 50%;
-    right: 50%;
-    transform: translateX(50%) translateY(45%);
   }
 }

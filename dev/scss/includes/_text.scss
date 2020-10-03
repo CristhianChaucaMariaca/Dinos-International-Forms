@@ -10,9 +10,10 @@
     font-family: "italic";
     src: url($fontItalic) format('truetype');
 }
-$font-t:"brand";
+$font-b:"brand";
 $font-p:"regular";
 $font-i:"italic";
+$font-brand:$font-b;
 $font-titulo:$font-p;
 $font-parrafo:$font-p;
 body{

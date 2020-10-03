@@ -1,0 +1,12 @@
+@media (max-width:360px)
+{
+    .menu{
+        &__nav{
+            width: 95%;
+        }
+        &__item{
+            width: 140px;
+            font-size: 1.1em;
+        }
+    }
+}
