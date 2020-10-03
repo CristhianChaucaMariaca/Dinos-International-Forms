@@ -46,15 +46,19 @@ body {
 }
 
 @font-face {
-  font-family: "loyola pro black";
-  src: url("fonts/loyola-pro-black.otf") format("truetype");
-}
-@font-face {
-  font-family: "Funny Cute";
+  font-family: "brand";
   src: url("fonts/FunnyCute.otf") format("truetype");
 }
+@font-face {
+  font-family: "regular";
+  src: url("fonts/SummerBlaster.otf") format("truetype");
+}
+@font-face {
+  font-family: "italic";
+  src: url("fonts/SummerBlasterItalic.otf") format("truetype");
+}
 body {
-  font-family: "loyola pro black";
+  font-family: "regular";
   font-size: 12pt;
 }
 
@@ -79,7 +83,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-  color: #FAFE01;
+  color: #ffcc29;
   position: relative;
   font-size: 1.3em;
   width: 190px;
@@ -103,7 +107,7 @@ body {
   margin: 7%;
 }
 .menu #combos, .menu #pollos, .menu #otros {
-  width: 65%;
+  width: 52%;
 }
 .menu__text {
   position: absolute;
@@ -136,8 +140,8 @@ body {
 #preloading .load {
   width: 50px;
   height: 50px;
-  border-top: 5px solid #FAFE01;
-  border-left: 5px solid #FAFE01;
+  border-top: 5px solid #ffcc29;
+  border-left: 5px solid #ffcc29;
   border-radius: 100%;
   animation: girar 0.8s infinite linear;
   opacity: 0.7;
@@ -178,9 +182,9 @@ body {
 
 .headerdishes {
   font-size: 2em;
-  font-family: "Funny Cute";
+  font-family: "regular";
   background-color: #B835AC;
-  color: #FFCA30;
+  color: #ffcc29;
   padding-bottom: 5px;
   padding-top: 10px;
   text-transform: uppercase;
@@ -232,14 +236,14 @@ body {
   display: block;
 }
 .dishes__price {
-  color: #FAFE01;
+  color: white;
 }
 .dishes__name {
   text-align: center;
   font-size: 1.3em;
   color: #F22327;
   justify-content: center;
-  font-family: "loyola pro black";
+  font-family: "regular";
 }
 
 .content__plate {
@@ -247,7 +251,6 @@ body {
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -261,7 +264,7 @@ body {
   left: 50%;
   top: 0px;
   transform: translateY(-75%) translateX(-50%);
-  width: 140px;
+  width: 120px;
   z-index: 100;
 }
 .plate__img {
@@ -278,31 +281,30 @@ body {
 }
 .plate__picture {
   transition: transform 5.5s linear;
-  border-bottom: 10px solid #FAFE01;
-  border-top: 10px solid #FAFE01;
+  border-bottom: 10px solid #ffcc29;
+  border-top: 10px solid #ffcc29;
 }
 .plate__body {
   color: #F22327;
 }
 .plate__title {
-  font-size: 2em;
+  font-size: 1.5em;
   margin-top: 10px;
   margin-bottom: 7px;
   text-align: center;
-  text-transform: uppercase;
-  font-family: "loyola pro black";
+  font-family: "regular";
 }
 .plate__price {
   text-align: center;
   font-size: 1.6em;
-  font-family: "loyola pro black";
+  font-family: "regular";
   color: #B835AC;
 }
 .plate__text {
   font-size: 1.3em;
   margin-top: 7px;
   text-align: center;
-  font-family: "loyola pro black";
+  font-family: "regular";
   color: #B835AC;
 }
 .plate__pepsi {
@@ -334,7 +336,7 @@ body {
   text-transform: uppercase;
   margin-bottom: 20px;
   margin-top: 20px;
-  font-family: "loyola pro black";
+  font-family: "regular";
 }
 .lists__item {
   display: flex;
@@ -439,7 +441,7 @@ body {
   bottom: 50%;
   width: 90%;
   transform: translateY(42%) translateX(-50%);
-  color: #FAFE01;
+  color: #ffcc29;
   font-size: 1.35em;
   text-transform: uppercase;
 }
@@ -603,12 +605,12 @@ body {
   }
 
   .content__plate {
-    margin-top: 5px;
+    margin-top: 0px;
     margin-bottom: 5px;
   }
 
   .plate {
-    margin-top: 20px;
+    margin-top: 0px;
     margin-bottom: 20px;
     font-size: 16px;
   }
@@ -623,7 +625,6 @@ body {
     left: 50%;
     top: 0px;
     transform: translateY(10%) translateX(-50%);
-    width: 140px;
   }
   .plate__picture {
     border-top-width: 86px;
@@ -710,9 +711,6 @@ body {
     font-size: 1em;
   }
 
-  .menu {
-    grid-column-gap: 10px;
-  }
   .menu__item {
     width: 80px;
     font-size: 1em;

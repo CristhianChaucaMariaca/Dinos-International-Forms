@@ -1,14 +1,19 @@
 @font-face{
-    font-family: "loyola pro black";
+    font-family: "brand";
     src: url($fontBlack) format('truetype');
 }
 @font-face{
-    font-family: "Funny Cute";
+    font-family: "regular";
     src: url($fontRegular) format('truetype');
 }
-$font-t:"Funny Cute";
-$font-p:"loyola pro black";
-$font-titulo:$font-t;
+@font-face{
+    font-family: "italic";
+    src: url($fontItalic) format('truetype');
+}
+$font-t:"brand";
+$font-p:"regular";
+$font-i:"italic";
+$font-titulo:$font-p;
 $font-parrafo:$font-p;
 body{
     font-family: $font-parrafo;

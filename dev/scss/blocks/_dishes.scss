@@ -2,7 +2,7 @@
   font-size: 2em;
   font-family: $font-titulo;
   background-color: $colorcuatro;
-  color: $colortres;
+  color: $colorsecundario;
   padding-bottom: 5px;
   padding-top: 10px;
   text-transform: uppercase;
@@ -54,7 +54,7 @@
     display: block;
   }
   &__price{
-    color:$colorsecundario;
+    color:$color-white;
   }
   &__name {
     text-align: center;
