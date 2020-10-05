@@ -307,6 +307,7 @@ body {
   margin-bottom: 7px;
   text-align: center;
   font-family: "regular";
+  letter-spacing: 2px;
 }
 .plate__price {
   text-align: center;
@@ -515,6 +516,10 @@ body {
     font-size: 1.5rem;
     max-width: 100%;
   }
+
+  .menu__item {
+    font-size: 1.2em;
+  }
 }
 @media (max-width: 1050px) {
   .dishes {
@@ -573,7 +578,6 @@ body {
   }
 
   .lists {
-    font-size: 1.2rem;
     max-width: 550px;
   }
 
@@ -698,9 +702,6 @@ body {
     flex-direction: column;
   }
 
-  .lists {
-    font-size: 0.9em;
-  }
   .lists__content {
     width: 85%;
     margin: 0 auto;
