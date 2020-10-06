@@ -21,7 +21,8 @@
   }
   &__marco {
   }
-  &__body {
+  &__body--center{
+    text-align: center;
   }
   &__item {
     display: flex;
@@ -34,6 +35,7 @@
   &__name {
     font-size: 1em;
     flex-grow: 1;
+    color:$colorcuatro;
   }
 
   &--uno {
