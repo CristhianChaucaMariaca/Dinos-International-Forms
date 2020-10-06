@@ -331,6 +331,12 @@ body {
 .plate__pepsi img {
   max-width: 100%;
 }
+.plate__legend {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 0.8em;
+  color: #B835AC;
+}
 
 .lists {
   font-size: 1.2rem;
@@ -425,6 +431,17 @@ body {
 }
 .chops__items {
   flex-grow: 1;
+}
+
+.list {
+  color: #B835AC;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.list__price {
+  text-align: right;
 }
 
 .btn {
@@ -576,6 +593,9 @@ body {
   .plate__pepsi {
     width: 50px;
   }
+  .plate__legend {
+    width: 100%;
+  }
 
   .lists {
     max-width: 550px;
@@ -585,6 +605,10 @@ body {
     bottom: 30px;
     right: 30px;
     width: 90px;
+  }
+
+  .list {
+    width: 100%;
   }
 }
 @media (max-width: 660px) {

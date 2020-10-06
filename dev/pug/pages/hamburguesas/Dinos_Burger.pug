@@ -1,0 +1,21 @@
+extends ../../templates/template-plate.pug
+include ../../mixins/plato
+append config
+    // TODO: * modificar variable objeto
+    each plato in hamburguesas.content
+        // TODO: * modificar variable TITULO
+        if(plato.text == "Dino's Burger")
+            - page = plato.text
+            - metadescripcion = plato.description
+block content
+    .content__plate
+        // TODO: * modificar variable objeto
+        each plato in hamburguesas.content
+            // TODO: * modificar variable TITULO
+            if(plato.text == "Dino's Burger") 
+                //- TODO: * Modificar nombre de objeto para description
+                +plato(plato,sponsor[0],hamburguesas.category)
+            
+    include ../../blocks/btn_atras
+    //- TODO: * Modificar nombre de objeto para category
+    +btn(hamburguesas.category)

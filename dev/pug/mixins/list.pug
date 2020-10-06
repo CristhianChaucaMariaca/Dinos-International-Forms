@@ -28,3 +28,10 @@ mixin chops(items)
                         p.chops__price #{item.pricedos}
                         p.chops__price #{item.pricetres}
                         p.chops__price #{item.pricecuatro}
+mixin list(list)
+    table.list
+        each item in list
+            tr.list__row
+                td.list__item - !{item.description}
+                td.list__price !{item.price}
+

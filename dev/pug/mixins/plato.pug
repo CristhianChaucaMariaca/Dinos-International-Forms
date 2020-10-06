@@ -38,3 +38,20 @@ mixin platodos(plato,sponsor,category,modificador)
             .sponsors__body
                 include sponsor
                 +sponsor(sponsor)
+
+mixin platoList(plato,sponsor,category)
+    .plate
+        .plate__img
+            .plate__logo
+                img(src="media/"+logo.img+logo.extention, alt=logo.alt)
+            picture.plate__cont__picture
+                img.plate__picture(srcset="media/"+category+"/"+plato.img.picture+plato.img.extention, alt=plato.text)
+        .plate__body
+            h2.plate__title !{plato.text}
+            include list
+            +list(plato.list)
+            p.plate__legend ** Guarnición a elección en todas nuestras opciones.
+        .sponsors
+            .sponsors__body
+                include sponsor
+                +sponsor(sponsor)

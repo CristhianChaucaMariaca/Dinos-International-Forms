@@ -68,4 +68,10 @@
       max-width: 100%;
     }
   }
+  &__legend{
+    width: 80%;
+    margin:0 auto;
+    font-size: .8em;
+    color: $colorcuatro;
+  }
 }

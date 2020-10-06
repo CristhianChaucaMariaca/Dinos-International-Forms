@@ -47,6 +47,9 @@
     &__pepsi {
       width: 50px;
     }
+    &__legend{
+      width: 100%;
+    }
   }
   .lists {
     max-width: 550px;
@@ -55,5 +58,8 @@
     bottom: 30px;
     right: 30px;
     width: 90px;
+  }
+  .list{
+    width: 100%;
   }
 }

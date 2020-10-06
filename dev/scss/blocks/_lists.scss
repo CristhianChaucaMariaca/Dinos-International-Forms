@@ -98,3 +98,14 @@
     flex-grow: 1;
   }
 }
+
+.list{
+  color: $colorcuatro;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  &__price{
+    text-align: right;
+  }
+}
