@@ -213,6 +213,7 @@ body {
   justify-content: center;
 }
 .headerdishes__text {
+  letter-spacing: 3px;
   margin-right: 20px;
 }
 .headerdishes__icon {
@@ -355,8 +356,8 @@ body {
 .lists__title {
   font-size: 1.35em;
   text-transform: uppercase;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-top: 30px;
   font-family: "regular";
 }
 .lists__body--center {
@@ -523,7 +524,7 @@ body {
 }
 @media screen and (min-width: 1367px) {
   body {
-    font-size: 19px;
+    font-size: 16px;
   }
 
   .plate__logo {
