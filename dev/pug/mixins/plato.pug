@@ -17,6 +17,25 @@ mixin plato(plato,sponsor,category)
             .sponsors__body
                 include sponsor
                 +sponsor(sponsor)
+mixin platoTres(plato,sponsor,category)
+    .plate
+        .plate__img
+            .plate__logo
+                img(src="media/"+logo.img+logo.extention, alt=logo.alt)
+            picture.plate__cont__picture
+                img.plate__picture(srcset="media/"+category+"/"+plato.img.picture+plato.img.extention, alt=plato.text)
+        .plate__body
+            h2.plate__title !{plato.text}
+            if(plato.price_uno)
+                p.plate__price Bs&nbsp;!{plato.price_uno}
+            if(plato.price_dos)
+                p.plate__price Bs&nbsp;!{plato.price_dos}
+            p.plate__text !{plato.description}
+            p.plate__legend ** Guarnición a elección en todas nuestras opciones.
+        .sponsors
+            .sponsors__body
+                include sponsor
+                +sponsor(sponsor)
 
 mixin platodos(plato,sponsor,category,modificador)
     .plate
