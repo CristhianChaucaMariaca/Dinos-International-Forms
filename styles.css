@@ -552,7 +552,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-@media screen and (max-device-width: 768px) {
+@media screen and (max-width: 768px) {
   .container {
     width: 90%;
   }
