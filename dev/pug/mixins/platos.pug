@@ -6,8 +6,8 @@ mixin platos(plato,category)
         .dishes__name
             span.dishes__text !{plato.text}
             if(plato.price_uno)
-                span.dishes__price Bs #{plato.price_uno}
+                span.dishes__price Bs !{plato.price_uno}
             if(plato.price_dos)
-                span.dishes__price  - #{plato.price_dos}
+                span.dishes__price  - !{plato.price_dos}
             if(plato.price_tres)
-                span.dishes__price  - #{plato.price_tres}
+                span.dishes__price  - !{plato.price_tres}

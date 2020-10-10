@@ -253,6 +253,9 @@ body {
 .dishes__price {
   color: #B835AC;
 }
+.dishes__price span {
+  display: none;
+}
 .dishes__name {
   text-align: center;
   font-size: 1.3em;
