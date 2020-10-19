@@ -96,9 +96,18 @@
     width: 80px;
   }
   .sponsors {
-    &__body {
-      flex-direction: column;
+    &__content {
+      width: 40px;
     }
+  }
+  #Pacenia {
+    width: 90px;
+  }
+  #huari {
+    width: 90px;
+  }
+  #Guarana {
+    width: 50px;
   }
   .lists {
     &__content {
